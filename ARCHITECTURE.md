@@ -6,7 +6,7 @@
 
 Dưới đây là sơ đồ cây thư mục của dự án:
 
-` ``` `
+```
 .
 ├── .github/                      # Cấu hình GitHub Actions (CI/CD)
 │   └── workflows/
@@ -81,7 +81,7 @@ Dưới đây là sơ đồ cây thư mục của dự án:
 ├── tsconfig.node.json            # Cấu hình TypeScript cho môi trường Node.js
 └── vite.config.ts                # Cấu hình Vite
 
-` ``` `
+```
 
 ## 2. Giải thích các thư mục chính
 
