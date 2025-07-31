@@ -1,7 +1,4 @@
-# Kiến trúc Dự án My E-commerce Dashboard
-
-Đây là tài liệu mô tả cấu trúc thư mục và các thành phần chính của dự án My E-commerce Dashboard, được xây dựng với Vite, React và TypeScript.
-
+# Kiến trúc Dự án GeneAI
 ## 1. Cấu trúc thư mục
 
 Dưới đây là sơ đồ cây thư mục của dự án:
