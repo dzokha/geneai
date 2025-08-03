@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import trLogo from './assets/timerent.png'
+import scLogo from './assets/sangche.jpg'
 import './styles/App.css'
 
 function App() {
@@ -9,25 +9,21 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+        <a href="https://timerent.vn" target="_blank">
+          <img src={trLogo} className="logo" alt="Timerent logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="https://sangche.vn" target="_blank">
+          <img src={scLogo} className="logo react" alt="Sangche logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main>
+        <h1>CyberSecurity + Intellectual Property</h1>
+        <p className="slogan">Protecting Ideas, Security System</p>
+        <p className="inro">A personal page on cybersecurity and intellectual property</p>
+      <main>
+      <footer> 
+        <small>2025 - Kha Van Nguyen</small> 
+      </footer>
     </>
   )
 }
