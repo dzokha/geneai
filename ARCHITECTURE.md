@@ -8,8 +8,9 @@ Dưới đây là sơ đồ cây thư mục của dự án:
 ├── .github/                      # Cấu hình GitHub Actions (CI/CD)
 │   └── workflows/
 │       └── main.yml              # Workflow để build và deploy lên Cloudflare Pages
-├── public/                       # Các file tĩnh không qua xử lý của Vite (index.html, favicon)
-│   └── index.html
+├── public/                       # Các file tĩnh không qua xử lý của Vite (favicon)
+│   ├── CNAME
+│   └── Dzokha.ico
 ├── src/
 │   ├── assets/                   # Tài nguyên tĩnh của ứng dụng (hình ảnh, icons, font tùy chỉnh)
 │   │   ├── images/
@@ -28,26 +29,35 @@ Dưới đây là sơ đồ cây thư mục của dự án:
 │   ├── layouts/                  # Các layout chính cho các nhóm trang (MainLayout, AuthLayout)
 │   │   ├── MainLayout.tsx
 │   │   └── AuthLayout.tsx
-│   ├── pages/                    # Các trang ứng dụng, mỗi trang là một view hoàn chỉnh
-│   │   ├── auth/                 # Trang đăng nhập, đăng ký
+│   ├── modules/
+│   │   ├── auth/                 # Trang đăng nhập, đăng ký              
 │   │   │   ├── LoginPage.tsx
 │   │   │   └── RegisterPage.tsx
-│   │   ├── categories/           # Quản lý danh mục sản phẩm
-│   │   │   ├── CategoryList.tsx
-│   │   │   └── CategoryForm.tsx
-│   │   ├── products/             # Quản lý sản phẩm
-│   │   │   ├── ProductList.tsx
-│   │   │   └── ProductForm.tsx
-│   │   ├── orders/               # Quản lý đơn hàng
-│   │   │   ├── OrderList.tsx
-│   │   │   └── OrderDetail.tsx
-│   │   └── dashboard/            # Trang tổng quan
-│   │       └── Dashboard.tsx
-│   ├── services/                 # Các module gọi API và xử lý dữ liệu backend
-│   │   ├── authService.ts
-│   │   ├── categoryService.ts
-│   │   ├── productService.ts
-│   │   └── orderService.ts
+│   │   ├── geneai/
+│   │   │   ├── assets/
+│   │   │   ├── components/ 
+│   │   │   ├── pages/                    # Các trang ứng dụng, mỗi trang là một view hoàn chỉnh
+│   │   │   ├── services/                 # Các module gọi API và xử lý dữ liệu backend
+│   │   ├── shopfish/
+│   │   │   ├── assets/
+│   │   │   ├── components/ 
+│   │   │   ├── pages/                    # Các trang ứng dụng, mỗi trang là một view hoàn chỉnh
+│   │   │   │   ├── categories/           # Quản lý danh mục sản phẩm
+│   │   │   │   │   ├── CategoryList.tsx
+│   │   │   │   │   └── CategoryForm.tsx
+│   │   │   │   ├── products/             # Quản lý sản phẩm
+│   │   │   │   │   ├── ProductList.tsx
+│   │   │   │   │   └── ProductForm.tsx
+│   │   │   │   ├── orders/               # Quản lý đơn hàng
+│   │   │   │   │   ├── OrderList.tsx
+│   │   │   │   │   └── OrderDetail.tsx
+│   │   │   │   └── Dashboard.tsx
+│   │   │   ├── services/                 # Các module gọi API và xử lý dữ liệu backend
+│   │   │   │   ├── authService.ts
+│   │   │   │   ├── categoryService.ts
+│   │   │   │   ├── productService.ts
+│   │   │   │   └── orderService.ts
+│   ├── services/                 
 │   ├── store/                    # Quản lý global state (Sử dụng Redux Toolkit)
 │   │   ├── index.ts              # Cấu hình Redux store
 │   │   ├── slices/               # Các Redux slices riêng biệt
@@ -71,6 +81,7 @@ Dưới đây là sơ đồ cây thư mục của dự án:
 ├── .env.production               # Biến môi trường cho môi trường production (KHÔNG COMMIT)
 ├── .gitignore                    # Danh sách các file/thư mục không đưa lên Git
 ├── eslint.config.js              # Cấu hình ESLint
+├── index.html
 ├── package.json                  # Thông tin dự án và dependencies
 ├── README.md                     # Tài liệu chính của dự án
 ├── tsconfig.app.json             # Cấu hình TypeScript cho ứng dụng
