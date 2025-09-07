@@ -37,6 +37,7 @@ Dưới đây là sơ đồ cây thư mục của dự án:
 │   │   │   ├── assets/
 │   │   │   ├── components/ 
 │   │   │   ├── pages/                    # Các trang ứng dụng, mỗi trang là một view hoàn chỉnh
+│   │   │   │   └── Dashboard.tsx
 │   │   │   ├── services/                 # Các module gọi API và xử lý dữ liệu backend
 │   │   ├── shopfish/
 │   │   │   ├── assets/
